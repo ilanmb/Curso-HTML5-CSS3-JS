@@ -7,13 +7,26 @@
     <title>Midias em HTML 5</title>
 </head>
 <body>
-    <h1>Imagem Dinâmica</h1>
+    <h1>Midias em HTML 5</h1>
+    <h2>Imagem dinâmica</h2>
     <p>Tente abrir esse site em dispositivos diferentes ou aumente e diminua a janela do seu navegador.</p>
     <picture>
         <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
         <img src="imagens/imagem-g.png" alt="Imagem Flexível">
     </picture>
+    <h2>Reproduzir audios</h2>
+    <p>Vamos aprender a reproduzir audios no HTML 5</p>
+    <audio src="midia/Witness - Mikos Da Gawd.mp3" controls autoplay></audio>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Travel Light - RW Smith.mp3" type="audio/mpeg">
+        <source src="midia/Travel Light - RW Smith.wav" type="audio/wav">
+        <source src="midia/Travel Light - RW Smith.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Travel Light - RW Smith.mp3">clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    
     
 </body>
 </html>
